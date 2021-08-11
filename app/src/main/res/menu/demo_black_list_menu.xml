@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_friend_unblock"
+        android:orderInCategory="100"
+        android:visible="true"
+        android:title="移除黑名单"
+        app:showAsAction="ifRoom"/>
+
+</menu>

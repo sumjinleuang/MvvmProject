@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff9f9f9">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/em_margin_15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.sumjin.peppymvvm.common.widget.ArrowItemView
+            android:id="@+id/item_id"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:foreground="@drawable/demo_ripple_click_gray"
+            app:arrowItemTitle="* Microchip ID号"
+            app:arrowItemContent="123"
+            app:arrowItemTitleSize="14sp"
+            app:arrowItemShowArrow="false"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.sumjin.peppymvvm.common.widget.ArrowItemView
+            android:id="@+id/item_gender"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:foreground="@drawable/demo_ripple_click_gray"
+            app:arrowItemTitle="* 性别"
+            app:arrowItemTitleSize="14sp"
+            app:arrowItemContent="男"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_nickname" />
+
+        <com.sumjin.peppymvvm.common.widget.ArrowItemView
+            android:id="@+id/item_avatar"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:foreground="@drawable/demo_ripple_click_gray"
+            app:arrowItemTitle="头像"
+            app:arrowItemTitleSize="14sp"
+            app:arrowItemShowPhoto="true"
+            app:arrowItemPhotoSrc="@mipmap/ic_launcher"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_id" />
+
+        <com.sumjin.peppymvvm.common.widget.ArrowItemView
+            android:id="@+id/item_nickname"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:foreground="@drawable/demo_ripple_click_gray"
+            app:arrowItemTitle="爱称"
+            app:arrowItemTitleSize="14sp"
+            app:arrowItemContent="jacket"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_avatar" />
+
+        <com.sumjin.peppymvvm.common.widget.ArrowItemView
+            android:id="@+id/item_breed"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:foreground="@drawable/demo_ripple_click_gray"
+            app:arrowItemTitle="* 种类"
+            app:arrowItemTitleSize="14sp"
+            app:arrowItemContent="贵宾犬"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_gender" />
+
+        <com.sumjin.peppymvvm.common.widget.ArrowItemView
+            android:id="@+id/item_color"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:foreground="@drawable/demo_ripple_click_gray"
+            app:arrowItemTitle="颜色"
+            app:arrowItemTitleSize="14sp"
+            app:arrowItemContent="白色"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_breed" />
+
+        <com.sumjin.peppymvvm.common.widget.ArrowItemView
+            android:id="@+id/item_second_color"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:foreground="@drawable/demo_ripple_click_gray"
+            app:arrowItemTitle="次要颜色"
+            app:arrowItemTitleSize="14sp"
+            app:arrowItemContent="白色"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_color" />
+
+        <com.sumjin.peppymvvm.common.widget.ArrowItemView
+            android:id="@+id/item_third_color"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:foreground="@drawable/demo_ripple_click_gray"
+            app:arrowItemTitle="第三色"
+            app:arrowItemTitleSize="14sp"
+            app:arrowItemContent="白色"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_second_color" />
+
+        <com.sumjin.peppymvvm.common.widget.ArrowItemView
+            android:id="@+id/item_heavy"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:foreground="@drawable/demo_ripple_click_gray"
+            app:arrowItemTitle="近似重量"
+            app:arrowItemTitleSize="14sp"
+            app:arrowItemContent="15"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_third_color" />
+
+        <com.sumjin.peppymvvm.common.widget.ArrowItemView
+            android:id="@+id/item_birthday"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:foreground="@drawable/demo_ripple_click_gray"
+            app:arrowItemTitle="大概出生日期"
+            app:arrowItemTitleSize="14sp"
+            app:arrowItemContent="1.1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_heavy" />
+
+        <com.sumjin.peppymvvm.common.widget.ArrowItemView
+            android:id="@+id/item_doctor"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:foreground="@drawable/demo_ripple_click_gray"
+            app:arrowItemTitle="医生"
+            app:arrowItemTitleSize="14sp"
+            app:arrowItemContent="Doc Lee"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_birthday" />
+
+        <com.sumjin.peppymvvm.common.widget.ArrowItemView
+            android:id="@+id/item_tip"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:foreground="@drawable/demo_ripple_click_gray"
+            app:arrowItemTitle="备注信息"
+            app:arrowItemTitleSize="14sp"
+            app:arrowItemContent="白色"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_doctor" />
+
+        <com.sumjin.peppymvvm.common.widget.ArrowItemView
+            android:id="@+id/item_delete"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:foreground="@drawable/demo_ripple_click_gray"
+            app:arrowItemTitle="注销信息"
+            app:arrowItemTitleSize="14sp"
+            app:arrowItemShowArrow="false"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_tip" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <EditText
+        android:id="@+id/login_username_input_box"
+        android:hint="请输入账号或邮箱"
+        android:layout_centerInParent="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/login_password_input_box"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/login_username_input_box"
+        android:layout_centerHorizontal="true"
+        android:hint="请输入密码"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/login_in_btn"
+        android:text="登录"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_above="@+id/linearlayout"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearlayout"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/login_register_btn"
+            android:gravity="center"
+            android:text="注册"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/white"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/login_skip_btn"
+            android:text="跳过"
+            android:textColor="@color/white"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

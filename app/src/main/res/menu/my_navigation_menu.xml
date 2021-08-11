@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/home"
+     android:title="@string/text_home"
+     android:icon="@mipmap/homey" />
+
+    <item android:id="@+id/circle"
+     android:title="@string/text_circle"
+     android:icon="@mipmap/circley" />
+
+    <item android:id="@+id/peppy"
+     android:title=""
+     android:icon="@mipmap/pet" />
+
+    <item android:id="@+id/contact"
+        android:title="@string/text_contact"
+        android:icon="@mipmap/talky" />
+
+    <item android:id="@+id/mysettle"
+        android:title="@string/text_mysettle"
+        android:icon="@mipmap/myy" />
+
+
+</menu>

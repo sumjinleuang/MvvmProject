@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+    <declare-styleable name="RoundImageView">
+    <!-- 默认图片资源，默认值为 null -->
+    <attr name="android:src"/>
+    <!-- 是否是圆形，默认值为 false -->
+    <attr format="boolean" name="ri_iv_circle"/>
+    <!-- 圆角矩形的半径，默认值为 0dp -->
+    <attr format="reference|dimension" name="ri_iv_cornerRadius"/>
+    <!-- 是否是矩形，默认值为 false -->
+    <attr format="boolean" name="ri_iv_square"/>
+    <!-- 描边的宽度，默认值为 0dp -->
+    <attr format="reference|dimension" name="ri_iv_borderWidth"/>
+    <!-- 描边的颜色，默认值为 Color.WHITE -->
+    <attr format="reference|color" name="ri_iv_borderColor"/>
+    </declare-styleable>
+
+    <declare-styleable name="ArrowItemView">
+        <attr name="arrowItemTitle" format="string|reference"/>
+        <attr name="arrowItemTitleColor" format="color|reference"/>
+        <attr name="arrowItemTitleSize" format="dimension|reference"/>
+        <attr name="arrowItemContent" format="string|reference"/>
+        <attr name="arrowItemContentColor" format="color|reference"/>
+        <attr name="arrowItemContentSize" format="dimension|reference"/>
+        <attr name="arrowItemShowDivider" format="boolean"/>
+        <attr name="arrowItemShowArrow" format="boolean"/>
+        <attr name="arrowItemShowAvatar" format="boolean"/>
+        <attr name="arrowItemAvatarSrc" format="reference"/>
+        <attr name="arrowItemAvatarHeight" format="dimension|reference"/>
+        <attr name="arrowItemAvatarWidth" format="dimension|reference"/>
+        <attr name="arrowItemShowPhoto" format="boolean"/>
+        <attr name="arrowItemPhotoSrc" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="SwitchItemView">
+        <attr name="switchItemTitle" format="string|reference"/>
+        <attr name="switchItemTitleColor" format="color|reference"/>
+        <attr name="switchItemTitleSize" format="dimension|reference"/>
+        <attr name="switchItemShowDivider" format="boolean"/>
+        <attr name="switchItemHint" format="string|reference"/>
+        <attr name="switchItemCheckEnable" format="boolean"/>
+        <attr name="switchItemClickable" format="boolean"/>
+    </declare-styleable>
+
+    <attr name="btnBackground" format="reference" />
+</resources>

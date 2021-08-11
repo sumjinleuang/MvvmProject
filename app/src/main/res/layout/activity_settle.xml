@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff9f9f9">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/em_margin_15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.sumjin.peppymvvm.common.widget.ArrowItemView
+            android:id="@+id/item_account"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/em_common_item_height"
+            android:background="@color/white"
+            android:foreground="@drawable/demo_ripple_click_gray"
+            app:arrowItemAvatarHeight="@dimen/em_about_me_avatar_size"
+            app:arrowItemAvatarSrc="@drawable/d_set"
+            app:arrowItemAvatarWidth="@dimen/em_about_me_avatar_size"
+            app:arrowItemShowAvatar="true"
+            app:arrowItemTitle="账号与安全"
+            app:arrowItemTitleSize="14sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.sumjin.peppymvvm.common.widget.ArrowItemView
+            android:id="@+id/item_msg_notify"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/em_common_item_height"
+            android:background="@color/white"
+            android:foreground="@drawable/demo_ripple_click_gray"
+            app:arrowItemAvatarHeight="@dimen/em_about_me_avatar_size"
+            app:arrowItemAvatarSrc="@drawable/d_feedback"
+            app:arrowItemAvatarWidth="@dimen/em_about_me_avatar_size"
+            app:arrowItemShowAvatar="true"
+            app:arrowItemTitle="新消息通知"
+            app:arrowItemTitleSize="14sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_help" />
+
+        <com.sumjin.peppymvvm.common.widget.ArrowItemView
+            android:id="@+id/item_privacy"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/em_common_item_height"
+            android:background="@color/white"
+            android:foreground="@drawable/demo_ripple_click_gray"
+            app:arrowItemAvatarHeight="@dimen/em_about_me_avatar_size"
+            app:arrowItemAvatarSrc="@drawable/d_about_hx"
+            app:arrowItemAvatarWidth="@dimen/em_about_me_avatar_size"
+            app:arrowItemShowAvatar="true"
+            app:arrowItemTitle="隐私"
+            app:arrowItemTitleSize="14sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_account" />
+
+        <com.sumjin.peppymvvm.common.widget.ArrowItemView
+            android:id="@+id/item_help"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/em_common_item_height"
+            android:background="@color/white"
+            android:foreground="@drawable/demo_ripple_click_gray"
+            app:arrowItemAvatarHeight="@dimen/em_about_me_avatar_size"
+            app:arrowItemAvatarSrc="@drawable/d_developer_set"
+            app:arrowItemAvatarWidth="@dimen/em_about_me_avatar_size"
+            app:arrowItemShowAvatar="true"
+            app:arrowItemTitle="帮助与反馈"
+            app:arrowItemTitleSize="14sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_privacy" />
+
+        <com.sumjin.peppymvvm.common.widget.ArrowItemView
+            android:id="@+id/item_product"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/em_common_item_height"
+            android:background="@color/white"
+            android:foreground="@drawable/demo_ripple_click_gray"
+            app:arrowItemAvatarHeight="@dimen/em_about_me_avatar_size"
+            app:arrowItemAvatarSrc="@drawable/d_developer_set"
+            app:arrowItemAvatarWidth="@dimen/em_about_me_avatar_size"
+            app:arrowItemShowAvatar="true"
+            app:arrowItemTitle="关于Peppy"
+            app:arrowItemTitleSize="14sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_msg_notify" />
+
+        <com.sumjin.peppymvvm.common.widget.ArrowItemView
+            android:id="@+id/item_quit"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/em_common_item_height"
+            android:background="@color/white"
+            android:foreground="@drawable/demo_ripple_click_gray"
+            app:arrowItemAvatarHeight="@dimen/em_about_me_avatar_size"
+            app:arrowItemAvatarSrc="@drawable/d_developer_set"
+            app:arrowItemAvatarWidth="@dimen/em_about_me_avatar_size"
+            app:arrowItemShowAvatar="true"
+            app:arrowItemTitle="退出登录"
+            app:arrowItemTitleSize="14sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_product" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

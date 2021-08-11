@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/dynamic_focus"
+            android:title="关注"/>
+    <item android:id="@+id/dynamic_collection"
+        android:title="收藏"/>
+    <item android:id="@+id/dynamic_backlist"
+        android:title="拉黑"/>
+
+</menu>
