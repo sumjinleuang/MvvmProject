@@ -63,7 +63,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="25dp"
                 android:layout_marginTop="5dp"
-                android:text="GitHub主页：https://github.com/LiangLuDev"
+                android:text="GitHub主页：https://github.com/sumjinleuang"
                 android:autoLink="web"
                 android:textColor="@color/black"
                 android:textSize="14sp"/>
@@ -83,7 +83,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="25dp"
                 android:layout_marginTop="5dp"
-                android:text="@string/about_content"
+                android:text="@string/about_cogntent"
                 android:textColor="@color/black"
                 android:textSize="12sp"/>
 
